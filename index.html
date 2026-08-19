@@ -1,85 +1,300 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Luiz F. S. Oliveira</title>
-    <link rel="shortcut icon" href="imgs/icone.ico" type="image/x-icon">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
-        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Luiz Filipe Santos Oliveira — Desenvolvedor</title>
+<meta name="description" content="Portfólio de Luiz Filipe Santos Oliveira, estudante de Ciências da Computação na UFV. Projetos em Python, Django, C++ e SQL.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22 fill=%22%235EEAD4%22>&gt;_</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="css/style.css">
+<link rel="script" href="js/script.js">
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <h1><i class="fa-solid fa-code"></i>Luiz F. S. Oliveira <i class="fa-solid fa-user fa-fw"></i></h1>
-        <ul>
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#projetos">Projetos</a></li>
-            <li><a href="#experiências">Experiências</a></li>
+
+<div class="topbar">
+  <div class="topbar-inner">
+    <div class="dots"><span></span><span></span><span></span></div>
+    <span class="title-tab"><b>luiz@ufv</b>:~/portfolio</span>
+    <nav>
+      <a href="#sobre">sobre</a>
+      <a href="#habilidades">habilidades</a>
+      <a href="#projetos">projetos</a>
+      <a href="#formacao">formacao</a>
+      <a href="#contato">contato</a>
+    </nav>
+  </div>
+</div>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="eyebrow"><span class="pulse"></span>disponível para estágio e projetos</div>
+
+    <div class="terminal">
+      <div class="terminal-head">
+        <div class="dots"><span></span><span></span><span></span></div>
+        <span class="path">zsh — 80×20</span>
+      </div>
+      <div class="terminal-body">
+        <p class="line"><span class="prompt">whoami</span></p>
+        <p class="out">Luiz Filipe Santos Oliveira<span class="role">estudante de Ciências da Computação · UFV</span></p>
+        <p class="line"><span class="prompt">cat objetivo.txt</span></p>
+        <p class="line" style="color:var(--text)">Construir sistemas sólidos hoje, crescer como Engenheiro de Software e, um dia, atuar em uma das maiores Big Techs do mundo<span class="cursor"></span></p>
+      </div>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="#projetos">Ver projetos</a>
+      <a class="btn btn-ghost" href="https://github.com/Dev-LFSO" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+        GitHub
+      </a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/dev-lfso/" target="_blank" rel="noopener">
+        <svg width="15" height="15" viewBox="0 0 16 16" fill="currentColor"><path d="M14.82 0H1.18C.53 0 0 .52 0 1.16v13.68C0 15.48.53 16 1.18 16h13.64c.65 0 1.18-.52 1.18-1.16V1.16C16 .52 15.47 0 14.82 0zM4.75 13.6H2.4V6h2.35v7.6zM3.58 4.98a1.36 1.36 0 1 1 0-2.72 1.36 1.36 0 0 1 0 2.72zM13.6 13.6h-2.35V9.9c0-.88-.02-2.02-1.24-2.02-1.24 0-1.43.97-1.43 1.96v3.76H6.24V6h2.25v1.04h.03c.31-.6 1.08-1.24 2.23-1.24 2.39 0 2.83 1.57 2.83 3.61v4.19z"/></svg>
+        LinkedIn
+      </a>
+    </div>
+  </div>
+</header>
+
+<main>
+
+  <section id="sobre">
+    <div class="wrap">
+      <div class="file-tab"><span class="dot dot-md"></span>sobre.md</div>
+      <div class="section-head">
+        <h2 class="section-title">Sobre</h2>
+        <p class="section-sub">Quem escreve o código do outro lado da tela.</p>
+      </div>
+
+      <div class="about-grid">
+        <div>
+          <p>Tenho 19 anos e sou estudante de <strong>Ciências da Computação</strong> na Universidade Federal de Viçosa (UFV-MG), onde também sou bolsista. Antes disso, cursei o técnico em <strong>Desenvolvimento de Sistemas</strong> e um curso básico de Python — hoje já me considero um desenvolvedor <strong>focado em Python</strong>, com conhecimento também em Java, C++ e SQL.</p>
+          <p>Gosto de transformar problemas reais em sistemas organizados: desde uma rede social feita em Django até um jogo em C++ com busca em largura para os inimigos perseguirem o jogador. Na UFV sou reconhecido pelo bom desempenho acadêmico e por me destacar em diversas atividades do curso.</p>
+          <p>Fora do código, as características que mais me definem são a <strong>proatividade</strong>, o <strong>raciocínio lógico</strong> e a facilidade em manter a <strong>harmonia no trabalho em equipe</strong> — coisas que aprendi levando a sério cada projeto, mesmo os acadêmicos.</p>
+        </div>
+
+        <dl class="facts">
+          <dt>instituição</dt>
+          <dd>Universidade Federal de Viçosa</dd>
+          <dt>curso</dt>
+          <dd>Ciências da Computação</dd>
+          <dt>formação técnica</dt>
+          <dd>Desenvolvimento de Sistemas</dd>
+          <dt>idiomas</dt>
+          <dd>Português (nativo), Inglês (avançado)</dd>
+          <dt>objetivo</dt>
+          <dd>Engenheiro de Software em uma grande Big Tech</dd>
+          <dt>e-mail</dt>
+          <dd>luiz.filipe.ctt@gmail.com</dd>
+        </dl>
+      </div>
+
+      <div class="achv-block">
+        <h3 class="achv-title">// conquistas e experiências</h3>
+        <ul class="achv-list">
+          <li>Participação na Semana da Informática da UFV</li>
+          <li>Maratonas Brasileira e Mineira de Programação</li>
+          <li>Integrante de um grupo de programação competitiva focado em maratonas</li>
+          <li>Tutor de programação para estudantes do ensino fundamental e médio</li>
+          <li>Coordenador de turma no campeonato Coder-Z Pro League</li>
+          <li>Diversas medalhas em olimpíadas de ensino</li>
         </ul>
-    </header>
-    <main>
-        <div class="cima" id="inicio">
-            <div class="foto">
-                <img src="imgs/eu.JPG" alt="">
-            </div>
-            <div class="sobre-mim">
-                <h1>SOBRE MIM</h1>
-                <h2>Olá 🤗, meu nome é Luiz Filipe!</h2>
-                <ul>
-                    <li>🔭 Estou cursando Ciência da Computação na Universidade Federal de Viçosa.</li>
-                    <li>🌱 Experiência em Python/C++/JAVA/SQL</li>
-                    <li>👨‍💻 Todos meus projetos estão em <a href="https://github.com/Dev-LFSO" target="_blank">https://github.com/Dev-LFSO?tab=repositories</a></li>
-                    <li>📫 Me contate luiz.filipe.ctt@gmail.com</li>
-                </ul>
-            </div>
-        </div>
-        <div class="meio" id="projetos">
-            <div class="projeto-1">
-                <h1>UNICADS</h1>
-                <p>Desenvolvi um Trabalho de Conclusão de Curso (TCC) voltado para atender a uma demanda real da indústria, especificamente para a Prefeitura de Jaraguá do Sul. O projeto consiste em um sistema de gerenciamento de pessoas com deficiência, visando melhorar a inclusão e a acessibilidade na cidade.</p>
-                <a href="https://github.com/Dev-LFSO/UNICADS" target="_blank"><img src="imgs/UNICADS.png" alt=""></a>
-            </div>
-            <div class="projeto-2">
-                <h1>Django</h1>
-                <p>Desenvolvi um simulador da plataforma Twitter utilizando HTML e CSS. O projeto foi uma oportunidade de aplicar conhecimentos em design de interface e estruturação de dados, proporcionando uma experiência semelhante à rede social.</p>
-                <a href="https://github.com/Dev-LFSO/Django" target="_blank"><img src="imgs/twitter.webp" alt=""></a>
-            </div>
-            <div class="projeto-3">
-                <h1>YT Downloader</h1>
-                <p>Criei um aplicativo que permite aos usuários baixar vídeos do YouTube de forma simples e rápida. O foco do projeto é oferecer uma ferramenta intuitiva que facilite o acesso a conteúdos offline.</p>
-                <a href="https://github.com/Dev-LFSO/YT-DOWNLOADER" target="_blank"><img src="imgs/YT.png" alt=""></a>
-            </div>
-            <div class="projeto-4">
-                <h1>NerdMan</h1>
-                <p>NerdMan é um jogo em C++ com SFML, inspirado no Pac-Man, onde um nerd coleta itens e foge de inimigas. Desenvolvido juntamente com Paulo Henrique de Souza Castro e Thales Rodrigues Neves na disciplina INF 110 - UFV.</p>
-                <a href="https://github.com/Dev-LFSO/Trabalho-3-INF110" target="_blank"><img src="imgs/menu.png" alt=""></a>
-            </div>
-            <div class="projeto-5">
-                <h1>Gift List</h1>
-                <p>Desenvolvi o Gift List em Python com Django, um sistema que possibilita o cadastro de presentes desejados e o acompanhamento daqueles que já foram adquiridos.</p>
-                <a href="https://github.com/Dev-LFSO/Presentes" target="_blank"><img src="imgs/presente.png" alt=""></a>
-            </div>
-        </div>
-        <div class="experiências" id="experiências">
-            <h1>MINHAS EXPERIÊNCIAS</h1>
-            <p>Concluí o ensino médio juntamente com o curso técnico em Desenvolvimento de Sistemas pelo SENAI, o que me proporcionou uma base sólida em programação e desenvolvimento de software. Atualmente, estou cursando Ciência da Computação pela Universidade Federal de Viçosa, onde tenho ampliado meus conhecimentos teóricos e práticos em diversas áreas da computação.</p>
+      </div>
+    </div>
+  </section>
 
-            <p>Durante minha formação técnica, aprofundei meus conhecimentos em diversas tecnologias essenciais para a área de TI. Um dos principais focos foi o desenvolvimento de projetos utilizando Django, um framework robusto para construção de aplicações web em Python. Essa experiência aprimorou minha proficiência na linguagem e me proporcionou uma compreensão mais profunda das melhores práticas de desenvolvimento, como organização de código e implementação eficiente de funcionalidades.</p>
+  <section id="habilidades">
+    <div class="wrap">
+      <div class="file-tab"><span class="dot dot-json"></span>habilidades.json</div>
+      <div class="section-head">
+        <h2 class="section-title">Habilidades</h2>
+        <p class="section-sub">Linguagens, ferramentas e o que funciona bem em equipe.</p>
+      </div>
 
-            <p>Além dos projetos em Django, também me dediquei à criação de sites utilizando HTML e CSS, explorando o design e a estética das páginas web. Aprendi a importância da usabilidade e da experiência do usuário, aplicando conceitos teóricos em situações práticas que facilitaram meu aprendizado.</p>
-                
-            <p>Outra parte importante do meu desenvolvimento foi o aprendizado de JavaScript, que me permitiu adicionar interatividade e dinamismo às aplicações web. Com JavaScript, pude criar funcionalidades mais complexas e responsivas, melhorando a experiência do usuário e aprimorando a performance dos projetos.</p>
-                
-            <p>Além disso, a familiaridade com Java me forneceu uma base sólida em programação orientada a objetos, permitindo-me compreender conceitos fundamentais que são aplicáveis a diversas linguagens e frameworks. Essa diversidade de experiências enriqueceu meu conhecimento e me preparou para enfrentar desafios variados na área de tecnologia.</p>
-
-            <p>Minha trajetória acadêmica também inclui participação em diversos eventos, como a 30ª Semana de Informática da UFV, a Maratona da Semana de Informática, palestras educacionais e workshops. Além disso, participei da Maratona de Programação da SBC e da Olimpíada Brasileira de Informática, experiências que reforçaram meu interesse pela área e desenvolveram minhas habilidades de resolução de problemas e trabalho em equipe.</p>
-                
-            <p>Essas vivências foram fundamentais para consolidar minha paixão por desenvolvimento de sistemas e tecnologia. À medida que avanço na minha formação, busco unir teoria e prática, o que considero crucial para me tornar um profissional completo. Estou motivado para continuar aprendendo e enfrentando novos desafios que expandam meu conhecimento e minhas habilidades.</p>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>linguagens</h3>
+          <div class="bar-row"><span class="label">Python</span><div class="bar-track"><div class="bar-fill" style="width:78%"></div></div></div>
+          <div class="bar-row"><span class="label">SQL</span><div class="bar-track"><div class="bar-fill" style="width:65%"></div></div></div>
+          <div class="bar-row"><span class="label">Java</span><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div></div>
+          <div class="bar-row"><span class="label">C++</span><div class="bar-track"><div class="bar-fill" style="width:55%"></div></div></div>
         </div>
-    </main>
+
+        <div class="skill-card">
+          <h3>frameworks &amp; ferramentas</h3>
+          <div class="chip-row">
+            <span class="chip">Django</span>
+            <span class="chip">jQuery / AJAX</span>
+            <span class="chip">Pygame Zero</span>
+            <span class="chip">SFML</span>
+            <span class="chip">MySQL</span>
+            <span class="chip">SQLite</span>
+            <span class="chip">Git &amp; GitHub</span>
+            <span class="chip">HTML &amp; CSS</span>
+            <span class="chip">AWS</span>
+            <span class="chip">Docker</span>
+          </div>
+        </div>
+
+        <div class="skill-card">
+          <h3>idiomas</h3>
+          <div class="bar-row"><span class="label">Português</span><div class="bar-track"><div class="bar-fill" style="width:100%"></div></div></div>
+          <div class="bar-row"><span class="label">Inglês</span><div class="bar-track"><div class="bar-fill" style="width:82%"></div></div></div>
+        </div>
+
+        <div class="skill-card">
+          <h3>perfil de trabalho</h3>
+          <div class="chip-row">
+            <span class="chip">Proatividade</span>
+            <span class="chip">Raciocínio lógico</span>
+            <span class="chip">Trabalho em equipe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projetos">
+    <div class="wrap">
+      <div class="file-tab"><span class="dot dot-dir"></span>projetos/</div>
+      <div class="section-head">
+        <h2 class="section-title">Projetos</h2>
+        <p class="section-sub">Uma amostra do que já tirei do papel — de redes sociais a jogos.</p>
+      </div>
+
+      <div class="proj-grid">
+
+        <article class="proj-card">
+          <div class="proj-file"><span class="dot" style="background:var(--mint)"></span>SocialMedia/</div>
+          <div class="proj-body">
+            <h3>Social Media</h3>
+            <p>Rede social construída em Django, com curtidas em tempo real via AJAX (atualização otimista, sem recarregar a página), painel de "Mais Curtidos", busca de posts e perfis com foto e bio editáveis.</p>
+            <div class="proj-tags"><span>Python</span><span>Django</span><span>jQuery</span><span>SQLite</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/Dev-LFSO/SocialMedia" target="_blank" rel="noopener">código ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-file"><span class="dot" style="background:var(--amber)"></span>UNICADS/</div>
+          <div class="proj-body">
+            <h3>UNICADS</h3>
+            <p>Sistema de cadastro e assistência a pessoas com deficiência, TCC do técnico em Desenvolvimento de Sistemas, feito em parceria com a Prefeitura de Jaraguá do Sul para apoiar políticas públicas de inclusão.</p>
+            <div class="proj-tags"><span>Django</span><span>MySQL</span><span>CRUD</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/Dev-LFSO/UNICADS" target="_blank" rel="noopener">código ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-file"><span class="dot" style="background:#c4b5fd"></span>NerdMan/</div>
+          <div class="proj-body">
+            <h3>NerdMan</h3>
+            <p>Jogo em C++ com SFML no estilo Pac-Man: um estudante nerd foge de quatro perseguidoras que usam busca em largura (BFS) para encontrar o caminho até ele, com portais e dificuldade crescente.</p>
+            <div class="proj-tags"><span>C++</span><span>SFML</span><span>BFS</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/Dev-LFSO/Trabalho-3-INF110" target="_blank" rel="noopener">código ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-file"><span class="dot" style="background:#5fc9d8"></span>ZombieEscape/</div>
+          <div class="proj-body">
+            <h3>Zombie Escape</h3>
+            <p>Jogo 2D de sobrevivência em Pygame Zero: desvie dos zumbis, evite obstáculos e sobreviva o máximo possível, com máquina de estados própria para menu, partida e game over.</p>
+            <div class="proj-tags"><span>Python</span><span>Pygame Zero</span><span>POO</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/Dev-LFSO/Game" target="_blank" rel="noopener">código ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-file"><span class="dot" style="background:var(--danger)"></span>YT-Downloader/</div>
+          <div class="proj-body">
+            <h3>YT Downloader</h3>
+            <p>Ferramenta em Python para baixar vídeos do YouTube a partir de uma URL, com versão executável pronta para Windows e gerenciamento de dependências via requirements.txt.</p>
+            <div class="proj-tags"><span>Python</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/Dev-LFSO/YT-DOWNLOADER" target="_blank" rel="noopener">código ↗</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="proj-card">
+          <div class="proj-file"><span class="dot" style="background:#7dd3fc"></span>Poker/</div>
+          <div class="proj-body">
+            <h3>Poker Combos Probability</h3>
+            <p>Calculadora de probabilidades de combinações no pôquer (par, flush, full house e outras), comparando a chance teórica de cada mão com simulações de distribuição de cartas.</p>
+            <div class="proj-tags"><span>Python</span><span>Probabilidade</span><span>Simulação</span></div>
+            <div class="proj-links">
+              <a href="https://github.com/Dev-LFSO/POKER" target="_blank" rel="noopener">código ↗</a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="formacao">
+    <div class="wrap">
+      <div class="file-tab"><span class="dot dot-log"></span>formacao.log</div>
+      <div class="section-head">
+        <h2 class="section-title">Formação</h2>
+        <p class="section-sub">O caminho até aqui.</p>
+      </div>
+
+      <div class="timeline">
+        <div class="tl-item">
+          <div class="tl-when">em andamento</div>
+          <h3>Ciências da Computação</h3>
+          <p>Universidade Federal de Viçosa (UFV-MG) — bolsista</p>
+        </div>
+        <div class="tl-item done">
+          <div class="tl-when">concluído</div>
+          <h3>Técnico em Desenvolvimento de Sistemas</h3>
+          <p>Base para o TCC UNICADS e primeiro contato com desenvolvimento web</p>
+        </div>
+        <div class="tl-item done">
+          <div class="tl-when">concluído</div>
+          <h3>Curso básico de Python</h3>
+          <p>Ponto de partida que hoje já evoluiu para um nível intermediário na linguagem</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato">
+    <div class="wrap">
+      <div class="file-tab"><span class="dot dot-sh"></span>contato.sh</div>
+      <div class="contact-box">
+        <div>
+          <h2>Vamos conversar?</h2>
+          <p>Aberto a oportunidades de estágio, projetos em Python/Django e trocas sobre tecnologia.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:luiz.filipe.ctt@gmail.com">Enviar e-mail</a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/dev-lfso/" target="_blank" rel="noopener">LinkedIn</a>
+          <a class="btn btn-ghost" href="https://github.com/Dev-LFSO" target="_blank" rel="noopener">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap">
+    <p>feito com HTML, CSS e JS puro · Luiz Filipe Santos Oliveira <span id="year"></span></p>
+    <p>hospede em GitHub Pages: settings → Pages → main /root</p>
+  </div>
+</footer>
 </body>
-<script src="js/script.js"></script>
 </html>
